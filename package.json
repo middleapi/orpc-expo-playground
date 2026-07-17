@@ -1,0 +1,21 @@
+{
+  "name": "orpc-expo-playground",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "pnpm -r dev",
+    "build": "pnpm -r build",
+    "type:check": "pnpm -r type:check",
+    "dev:native": "pnpm --filter native dev",
+    "dev:server": "pnpm --filter server dev"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "typescript": "^6"
+  },
+  "packageManager": "pnpm@11.13.0"
+}
