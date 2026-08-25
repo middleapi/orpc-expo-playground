@@ -20,12 +20,6 @@ export const queryClient = new QueryClient({
 export const link = new RPCLink({
   origin: serverUrl,
   url: `/rpc`,
-  // expo/fetch improves Event Iterator / streaming support on React Native
-  // async fetch(url, init) {
-  //   console.log(url);
-  //   const { fetch: expoFetch } = await import('expo/fetch');
-  //   return expoFetch(url, init);
-  // },
 });
 
 export const client: AppRouterClient = createORPCClient(link);
